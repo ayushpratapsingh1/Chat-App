@@ -15,8 +15,9 @@ Welcome to the Full-Stack Chat Application repository! This project is a real-ti
 - [License](#license)
 
 ## Demo
+
 Kindly allow a few moments after clicking the link, as the server may take some time to respond initially.
-You can experience the live demo of the application here: [full-stack-chat-app-mern.onrender.com](https://full-stack-chat-app-mern.onrender.com/)
+You can experience the live demo of the application here: [full-stack-chat-app](https://chat-app-w1r8.onrender.com)
 
 ## Features
 
@@ -79,49 +80,66 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/harishgarg2508/full-stack-chat-app-MERN.git
    ```
-```bash
-Navigate to the Project Directory:
 
-cd full-stack-chat-app-MERN
-Set Up Environment Variables:
+2. **Navigate to the Project Directory**:
 
-Create a .env file in the backend directory.
+   ```bash
+   cd full-stack-chat-app-MERN
+   ```
 
-Add the following environment variables:
+3. **Set Up Environment Variables**:
 
-MONGO_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_jwt_secret_key
-Replace your_mongodb_atlas_connection_string with your MongoDB Atlas connection string and your_jwt_secret_key with a secure secret key for JWT.
+   - Create a `.env` file in the backend directory.
+   - Add the following environment variables:
 
-Install Dependencies:
+   ```
+   MONGO_URI=your_mongodb_atlas_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   ```
+   
+   - Replace `your_mongodb_atlas_connection_string` with your MongoDB Atlas connection string and `your_jwt_secret_key` with a secure secret key for JWT.
 
-Backend:
+4. **Install Dependencies**:
 
-cd backend
-npm install
-Frontend:
+   - Backend:
 
-cd ../frontend
-npm install
-Run the Application:
+     ```bash
+     cd backend
+     npm install
+     ```
 
-Backend:
+   - Frontend:
 
-cd backend
-npm start
-The backend server will start on http://localhost:5000.
+     ```bash
+     cd ../frontend
+     npm install
+     ```
 
-Frontend:
+5. **Run the Application**:
 
-cd frontend
-npm start
-The frontend development server will start on http://localhost:3000.
-```
+   - Backend:
 
-```bash
-Project Structure
+     ```bash
+     cd backend
+     npm start
+     ```
+
+     The backend server will start on http://localhost:5000.
+
+   - Frontend:
+
+     ```bash
+     cd frontend
+     npm start
+     ```
+
+     The frontend development server will start on http://localhost:3000.
+
+## Project Structure
+
 The repository is organized as follows:
 
+```
 full-stack-chat-app-MERN/
 ├── backend/
 │   ├── config/
@@ -149,72 +167,59 @@ full-stack-chat-app-MERN/
 │   └── .env
 ├── package.json
 └── README.md
-backend/: Contains the server-side code.
-
-config/db.js: Database connection configuration.
-
-controllers/: Handles the logic for authentication and chat functionalities.
-
-models/: Defines Mongoose schemas for User and Message.
-
-routes/: Defines API routes for authentication and chat operations.
-
-server.js: Entry point for the backend server.
-
-frontend/: Contains the client-side code.
-
-public/: Static files.
-
-src/: React application source code.
-
-components/: Reusable React components.
-
-context/: Context API for state management.
-
-pages/: React components representing different pages.
-
-App.js: Main component that sets up routing.
-
-index.js: Entry point for the React application.
-
-tailwind.config.js: Configuration file for Tailwind CSS.
 ```
-```bash
-Usage
-User Registration:
 
-Navigate to the signup page.
+- **backend/**: Contains the server-side code.
+  - **config/db.js**: Database connection configuration.
+  - **controllers/**: Handles the logic for authentication and chat functionalities.
+  - **models/**: Defines Mongoose schemas for User and Message.
+  - **routes/**: Defines API routes for authentication and chat operations.
+  - **server.js**: Entry point for the backend server.
 
-Enter the required details and submit the form.
+- **frontend/**: Contains the client-side code.
+  - **public/**: Static files.
+  - **src/**: React application source code.
+    - **components/**: Reusable React components.
+    - **context/**: Context API for state management.
+    - **pages/**: React components representing different pages.
+    - **App.js**: Main component that sets up routing.
+    - **index.js**: Entry point for the React application.
+  - **tailwind.config.js**: Configuration file for Tailwind CSS.
 
-Upon successful registration, you will be redirected to the login page.
+## Usage
 
-User Login:
+### User Registration:
 
-Enter your credentials on the login page.
+1. Navigate to the signup page.
+2. Enter the required details and submit the form.
+3. Upon successful registration, you will be redirected to the login page.
 
-Upon successful authentication, you will be redirected to the chat interface.
+### User Login:
 
-Chat Interface:
+1. Enter your credentials on the login page.
+2. Upon successful authentication, you will be redirected to the chat interface.
 
-View the list of online users.
+### Chat Interface:
 
-Select a user to start a conversation.
+1. View the list of online users.
+2. Select a user to start a conversation.
+3. Send and receive messages in real-time.
 
-Send and receive messages in real-time.
+### Logout:
 
-Logout:
+- Click on the logout button to end your session securely.
 
-Click on the logout button to end your session securely.
+## Contributing
 
-Contributing
 Contributions are welcome! To contribute to this project:
 
-Fork the repository.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a Pull Request.
 
-Create a new branch (git checkout -b feature/YourFeature).
+## License
 
-Make your changes.
-
-Commit your changes (`git commit -m 
-```
+This project is licensed under the MIT License.
